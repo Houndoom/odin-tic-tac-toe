@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Houndoom's Tic Tac Toe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <div class="header">Houndoom's Tic Tac Toe</div>
+  <div id="message"></div>
+  <div class="main">
+    <div class="player" id="player-X">
+      <div class="player-turn">
+        <div>Player 1's turn</div>
+        <img src="images/arrow-down-thick-green.svg" alt="Player 1's turn" class="player-arrow">
+      </div>
+      <img src="images/player.jpg" alt="Player 1" class="player-image">
+    </div>
+    <div class="gameboard">
+      <div class="cell row-top col-left diag-right" id="cell0"></div>
+      <div class="cell row-top col-mid" id="cell1"></div>
+      <div class="cell row-top col-right diag-left" id="cell2"></div>
+      <div class="cell row-mid col-left" id="cell3"></div>
+      <div class="cell row-mid col-mid diag-right diag-left" id="cell4"></div>
+      <div class="cell row-mid col-right" id="cell5"></div>
+      <div class="cell row-bottom col-left diag-left" id="cell6"></div>
+      <div class="cell row-bottom col-mid" id="cell7"></div>
+      <div class="cell row-bottom col-right diag-right" id="cell8"></div>
+    </div>
+    <div class="player" id="player-O">
+      <div class="player-turn">
+        <div class="hidden">Player 2's turn</div>
+        <img src="images/arrow-down-thick-green.svg" alt="Player 2's turn" class="player-arrow hidden">
+      </div>
+      <img src="images/player.jpg" alt="Player 2" class="player-image">
+    </div>
+  </div>
+  <div class="footer"><button id="restart" type="button">Play again?</button></div>
+</body>
+</html>
