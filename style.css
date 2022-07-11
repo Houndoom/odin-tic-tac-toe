@@ -4,14 +4,17 @@
 }
 
 html, body {
+  box-sizing: border-box;
   height: 100%;
   width: 100%;  
+  margin: 0;
 }
 
 body {
   display: grid;
   grid-template-rows: 2fr 11fr;
   place-items: center;
+  position: relative;
 }
 
 /* Pre-game */
@@ -154,3 +157,12 @@ button:hover {
   display: none;
 }
 
+/* Credits */
+
+.credits {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+}
